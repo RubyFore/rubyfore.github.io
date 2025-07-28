@@ -456,8 +456,17 @@ body {
   }
 
   
-  #resume {
+  .resume {
     width: 100%;
+	aspect-ratio: 17 / 22;
+  }
+
+	  
+	   @media(min-width:767px) {
+		   .resume {
+		   width: 100%;
+		   aspect-ratio: 17 / 22;
+	   }
     }
 
     /*! div style */
