@@ -483,18 +483,24 @@ body {
     content: "."
   }
 
-  .resume {
+  .resume-ratio-box {
+    position: relative;
     width: 100%;
-	aspect-ratio: 100%;
-  }
+    aspect-ratio: 22 / 17;
 
+
+  }
+  /*.resume {
+    width: 100%;
+   /* aspect-ratio: 22/17;
+  }*/
 	  
 	   @media(min-width:767px) {
 		   .resume {
 		   width: 100%;
-		   aspect-ratio: 17 / 22;
+		   /*aspect-ratio: 22 / 17;*/
 	   }
-    }
+    }*/
 
     /*! div style */
   .image-gallery {
