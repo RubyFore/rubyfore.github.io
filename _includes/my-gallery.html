@@ -5,7 +5,7 @@
     <h2 id="pastimes">Pastimes</h2>
 
     <div class ="image-gallery">
-  {% assign sorted = site.static_files | sort: 'date' | reverse %}
+  {% assign sorted = site.static_files %}
   {% for file in sorted %}
   {% if file.path contains include.folder %}
   {% if file.extname == '.png' %}

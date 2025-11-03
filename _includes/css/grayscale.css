@@ -455,10 +455,37 @@ body {
     margin-left: calc(var(--bs-gutter-x) * -1);
   }
 
-  
+  .doi::before{
+    content: 'DOI:'
+  }
+  .title::after {
+    content: " ("
+  }
+  /*.year::after {
+    content: ")."
+  }*/
+  .author::before {
+    content: "). "
+  }
+  .journal::after{
+    content: ", "
+  }
+  .volume::after {
+    content: "("
+  }
+  .number::before {
+    content: ""
+  }
+  .number::after {
+    content: "),"
+  }
+  .pages::after {
+    content: "."
+  }
+
   .resume {
     width: 100%;
-	aspect-ratio: 17 / 22;
+	aspect-ratio: 100%;
   }
 
 	  
