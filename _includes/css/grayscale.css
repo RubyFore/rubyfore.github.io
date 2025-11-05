@@ -500,8 +500,14 @@ body {
 		   width: 100%;
 		   /*aspect-ratio: 22 / 17;*/
 	   }
-    }*/
-
+    }
+	   @media(max-width:766px) {
+		   .resume {
+		   width: 100%;
+           
+		   /*aspect-ratio: 22 / 17;*/
+	   }
+    }
     /*! div style */
   .image-gallery {
     width: 100%;
