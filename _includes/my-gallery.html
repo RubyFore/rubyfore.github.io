@@ -1,29 +1,29 @@
-<section id="pastimes" class="container pastimes-section justify-content-center">
+<section id="pastimes" class="container justify-content-center">
 <div class="row justify-content-center">
     <br>
     <br>
     <h2 id="pastimes">Pastimes</h2>
-  <div class="row justify-content-center">
-    <div class="col-lg-4">
-    <div class ="image-gallery">
+  <div class="row flex-row justify-content-center">
+    <div class="col-lg-8 text-align-center offset-lg-2 justify-content-center">
+    <div class ="image-gallery justify-content-center">
       {% assign sorted = site.static_files %}
         {% for file in sorted %}
           {% if file.path contains include.folder %}
             {% if file.extname == '.png' %}
               {% assign filenameparts = file.path | split: "/" %}
                 {% assign filename = filenameparts | last | replace: file.extname,"" %}
-                  <div class="box"><a href="{{ file.path | relative_url }}" title="{{ filename }}">
-                  <img src="{{ site.thumbsurl }}{{file.name }} " alt="{{ filename }}"  class="img-gallery" />
+                  <div class="box justify-content-center"><a href="{{ file.path | relative_url }}" title="{{ filename }}">
+                  <img src="{{ site.thumbsurl }}{{file.name }} " alt="{{ filename }}"  class="img-gallery justify-content-center" />
                   </a></div>
                 {% endif %}
               {% endif %}
             {% endfor %}
       </div>
-  </div>
-    <div class="col-lg-4">
-      <p>On my own time, I enjoy biking, interacting with fresh greens, and walking.</p>
+      <div>
+        <p>Mckenzie Pass, several thousand feet of climbing on a 1980s Univega using downtube shifters, lettuce varietal grown from seed and left to bolt, a Seattle staple: the Burke-Gilman. </p></div>
     </div>
   </div>
+
  
 </div>
 </section>

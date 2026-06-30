@@ -63,7 +63,7 @@ a:focus {
 
 .navbar-custom {
     margin-bottom: 0;
-    border-bottom: 1px solid #010101;
+    border-bottom: 1px solid rgba(207,208,209);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: {{ site.color.primary-dark }};
@@ -495,17 +495,14 @@ body {
     content: "."
   }
 
-  .resume-ratio-box {
+  .pdf-box {
     position: relative;
     width: 100%;
-    aspect-ratio: 22 / 17;
+    aspect-ratio: 17 / 22;
 
 
   }
-  /*.resume {
-    width: 100%;
-   /* aspect-ratio: 22/17;
-  }*/
+
 	  
 	   @media(min-width:767px) {
 		   .resume {
@@ -522,7 +519,7 @@ body {
     }
     /*! div style */
   .image-gallery {
-    width: 100%;
+    width: 100; 
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(200px, 1fr));
     justify-content: center;
@@ -537,10 +534,10 @@ body {
   }
 
   .img-gallery {
-	width: 100%;
-  height: 200px;
+	margin: 0 auto;
+    height: 200px;
 	object-fit: cover;
-  transform: scale(1);
+   transform: scale(1);
   transition: all 0.3s ease-in-out;
   &:hover {
     transform: scale(1.05);
